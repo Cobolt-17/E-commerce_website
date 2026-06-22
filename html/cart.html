@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ares Electronics Hub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body class="body-page">
+    <section id="header">
+      <a href="index.html">
+        <img
+          src="../images/logo.png"
+          class="logo"
+          alt="Ares Electronics Hub Logo"
+          width="100px"
+          height="100px"
+        />
+      </a>
+      <div class="header-center">
+        <div class="search-wrap">
+          <input
+            id="siteSearch"
+            type="search"
+            placeholder="Search products or categories..."
+            aria-label="Search"
+          />
+        </div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a class="active" href="cart.html"
+              ><i class="fa-solid fa-cart-shopping cart"></i
+            ></a>
+          </li>
+          <li class="nav-close">
+            <a href="#"
+              ><i id="close" class="fa-solid fa-angle-up fa-rotate-90"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+    <div class="breadcrumb-wrap">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="breadcrumb-sep">&gt;</span
+        ><span class="current">Cart</span>
+      </div>
+    </div>
+    <div id="searchResults" class="search-results"></div>
+    <section id="addcart">
+      <div id="cartBanner" class="success-banner" aria-live="polite"></div>
+
+      <div class="cart-header">
+        <div>
+          <h2 class="cart-title">YOUR <span>CART</span></h2>
+          <div id="cartItemCount" class="cart-count">0 ITEMS</div>
+        </div>
+        <div class="cart-header-actions">
+          <button id="clearCartTop" class="clear-cart-btn">Clear Cart</button>
+        </div>
+      </div>
+
+      <div class="cart-container">
+        <main class="cart-main">
+          <table class="cart-table modern">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </main>
+
+        <aside class="cart-sidebar">
+          <div
+            id="couponRow"
+            class="order-coupons-row"
+            role="button"
+            tabindex="0"
+            aria-label="View coupons"
+          >
+            <div class="coupon-left">
+              <div class="coupon-label">
+                Coupons Applied (<span id="couponCount">0</span>)
+              </div>
+            </div>
+            <div class="coupon-right">
+              <div id="couponAmount" class="coupon-amount">-₹0.00</div>
+            </div>
+          </div>
+          <div class="cart-totals modern-totals">
+            <h3>Order Summary</h3>
+            <p>Subtotal: <span id="tot-sub">₹0.00</span></p>
+            <p>Discount: <span id="tot-discount">-₹0.00</span></p>
+            <p>Shipping: <span id="tot-ship">₹0.00</span></p>
+            <p>Tax: <span id="tot-tax">₹0.00</span></p>
+            <p class="grand">
+              Grand Total: <strong id="tot-grand">₹0.00</strong>
+            </p>
+            <button class="checkout checkout-gradient">
+              Proceed to Checkout
+            </button>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <footer class="section">
+      <div class="cols">
+        <img
+          class="logo-header"
+          src="../images/logo-header.png"
+          alt="logo-header.png"
+        />
+        <p>Ares Electronics Hub is your one-stop</p>
+        <p>destination for all electronics</p>
+        <p>components modules, tools and robotics</p>
+        <p>solutions.</p>
+        <div class="follow-left">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a
+            href="https://www.instagram.com/im_sharana?igsh=MWtkcGc2ODNxMmpiaA=="
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/sharanabasava-i-javali-176102359?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="cols">
+        <h4>QUICK LINKS</h4>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="cols">
+        <h4>CATEGORIES</h4>
+        <a href="products.html">Arduino Boards</a>
+        <a href="products.html">Sensors</a>
+        <a href="products.html">Motors</a>
+        <a href="products.html">Displays</a>
+        <a href="products.html">GSM Modules</a>
+      </div>
+      <div class="cols">
+        <h4 class="h4">-</h4>
+        <a href="products.html">Wifi Modules</a>
+        <a href="products.html">Robotics</a>
+        <a href="products.html">Power Supplies</a>
+        <a href="products.html">Accessories</a>
+        <a href="products.html">All Products</a>
+      </div>
+      <div class="cols">
+        <h4>CUSTOMER SERVICE</h4>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Return Policy</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="cols">
+        <div class="newsletter">
+          <h4>NEWSLETTER</h4>
+          <p>Subscribe to get updates on arrivals and offers.</p>
+        </div>
+        <div class="form">
+          <input type="text" placeholder="Enter your email" />
+          <button class="sign">Sign Up</button>
+        </div>
+        <h4>PAYMENT METHODS</h4>
+        <div class="payment">
+          <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+          <a href="#"><i class="fa-solid fa-credit-card"></i></a>
+          <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+          <a href="#"><i class="fa-brands fa-google-pay"></i></a>
+        </div>
+      </div>
+    </footer>
+    <footer class="copyright">
+      <div>
+        <p>© 2024 Ares Electronics Hub. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <div
+      id="couponOverlay"
+      class="drawer-overlay"
+      tabindex="-1"
+      aria-hidden="true"
+    ></div>
+    <aside id="couponDrawer" class="coupon-drawer" aria-hidden="true">
+      <div class="drawer-header">
+        <div class="drawer-title">🏷 Coupons For You</div>
+        <button
+          id="closeCouponDrawer"
+          class="drawer-close"
+          aria-label="Close coupons"
+        >
+          ✕
+        </button>
+      </div>
+      <div id="couponList" class="drawer-body"></div>
+    </aside>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
