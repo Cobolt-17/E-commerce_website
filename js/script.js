@@ -499,7 +499,7 @@ function renderCartPage() {
   if (totalsEl) {
     totalsEl.addEventListener("click", (ev) => {
       if (ev.target.closest(".checkout")) {
-        alert("Proceeding to checkout — implement as needed.");
+        window.location.href = "checkout.html";
       }
     });
   }

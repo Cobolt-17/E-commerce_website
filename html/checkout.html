@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Checkout | Ares Electronics Hub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"
+      defer
+    ></script>
+    <script src="../js/checkout.js" defer></script>
+  </head>
+  <body class="checkout-page">
+    <section id="header">
+      <a href="index.html" aria-label="Ares Electronics Hub home">
+        <img
+          src="../images/logo.png"
+          class="logo"
+          alt="Ares Electronics Hub Logo"
+          width="100"
+          height="100"
+        />
+      </a>
+      <div class="checkout-header-title">CHECKOUT</div>
+      <a class="checkout-back" href="cart.html">Back to Cart</a>
+    </section>
+
+    <main class="checkout-main">
+      <div class="checkout-progress" aria-label="Checkout progress">
+        <span class="progress-step active" data-step-indicator="address">1. Delivery Address</span>
+        <span class="progress-line" aria-hidden="true"></span>
+        <span class="progress-step" data-step-indicator="payment">2. Payment</span>
+      </div>
+
+      <section id="addressStep" class="checkout-card" aria-labelledby="addressHeading">
+        <h1 id="addressHeading">DELIVERY ADDRESS</h1>
+        <p class="checkout-intro">Enter your delivery details to continue.</p>
+        <form id="addressForm" novalidate>
+          <div class="checkout-form-grid">
+            <div class="checkout-field">
+              <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+              <small class="field-error" data-error-for="fullName"></small>
+            </div>
+            <div class="checkout-field">
+                <label for="mobileNumber">Mobile Number <span aria-hidden="true">*</span></label>
+                <input id="mobileNumber" name="mobile" type="tel" inputmode="numeric" autocomplete="tel" maxlength="10" required />
+                <small class="field-error" data-error-for="mobileNumber"></small>
+            </div>
+            <div class="checkout-field checkout-field-wide">
+              <label for="house">House / Flat / Building <span aria-hidden="true">*</span></label>
+              <input id="house" name="house" type="text" autocomplete="address-line1" required />
+              <small class="field-error" data-error-for="house"></small>
+            </div>
+            <div class="checkout-field checkout-field-wide">
+              <label for="street">Street / Area <span aria-hidden="true">*</span></label>
+              <input id="street" name="street" type="text" autocomplete="address-line2" required />
+              <small class="field-error" data-error-for="street"></small>
+            </div>
+            <div class="checkout-field">
+              <label for="city">City <span aria-hidden="true">*</span></label>
+              <input id="city" name="city" type="text" autocomplete="address-level2" required />
+              <small class="field-error" data-error-for="city"></small>
+            </div>
+            <div class="checkout-field">
+              <label for="state">State <span aria-hidden="true">*</span></label>
+              <input id="state" name="state" type="text" autocomplete="address-level1" required />
+              <small class="field-error" data-error-for="state"></small>
+            </div>
+            <div class="checkout-field">
+              <label for="pinCode">PIN Code <span aria-hidden="true">*</span></label>
+              <input id="pinCode" name="pinCode" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="6" required />
+              <small class="field-error" data-error-for="pinCode"></small>
+            </div>
+            <div class="checkout-field">
+              <label for="landmark">Landmark <span class="optional">(Optional)</span></label>
+              <input id="landmark" name="landmark" type="text" autocomplete="off" />
+              <small class="field-error" data-error-for="landmark"></small>
+            </div>
+          </div>
+          <p id="addressFormError" class="form-error" role="alert"></p>
+          <button class="checkout-primary" type="submit">CONTINUE TO PAYMENT</button>
+        </form>
+      </section>
+
+      <section id="paymentStep" class="checkout-card is-hidden" aria-labelledby="paymentHeading">
+        <h1 id="paymentHeading">PAYMENT</h1>
+        <div class="order-total" aria-live="polite">
+          <span>Order Total</span>
+          <strong id="checkoutTotal">₹0.00</strong>
+        </div>
+        <div class="payment-card">
+          <h2>SCAN &amp; PAY</h2>
+          <p>SCAN THE QR CODE TO PAY</p>
+          <div id="paymentQr" class="payment-qr" aria-label="Payment QR code"></div>
+          <p class="payment-note">After completing the payment, confirm below.</p>
+          <button id="paymentCompleted" class="checkout-primary" type="button">PAYMENT COMPLETED</button>
+        </div>
+      </section>
+
+      <section id="confirmationStep" class="checkout-card confirmation-card is-hidden" aria-labelledby="confirmationHeading" role="status">
+        <div class="confirmation-icon" aria-hidden="true">✓</div>
+        <h1 id="confirmationHeading">ORDER CONFIRMED</h1>
+        <p class="payment-success">✓ Payment Successful</p>
+        <div class="receipt-details">
+          <div><span>Order ID</span><strong id="receiptOrderId"></strong></div>
+          <div><span>Order Date</span><strong id="receiptOrderDate"></strong></div>
+          <div><span>Customer Name</span><strong id="receiptCustomerName"></strong></div>
+          <div><span>Delivery Address</span><strong id="receiptAddress"></strong></div>
+          <div><span>PIN Code</span><strong id="receiptPinCode"></strong></div>
+        </div>
+        <div class="receipt-products-wrap">
+          <h2>Ordered Products</h2>
+          <div id="receiptProducts" class="receipt-products"></div>
+        </div>
+        <div id="receiptTotals" class="receipt-totals"></div>
+        <p class="receipt-status"><strong>Payment Status:</strong> PAID</p>
+        <p class="receipt-status"><strong>Delivery Status:</strong> ORDER CONFIRMED</p>
+        <p class="confirmation-note">This frontend demonstration does not verify payments with a bank or payment gateway.</p>
+        <div class="receipt-actions">
+          <button id="downloadReceipt" class="checkout-primary" type="button">DOWNLOAD RECEIPT</button>
+          <a class="checkout-primary checkout-link" href="index.html">CONTINUE SHOPPING</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

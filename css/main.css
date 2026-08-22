@@ -337,6 +337,10 @@ input[type="number"]::-webkit-inner-spin-button {
 #mobile a .fa-cart-shopping {
   position: relative;
 }
+#navbar li a .fa-cart-shopping,
+#mobile a .fa-cart-shopping {
+  color: #ffffff;
+}
 #navbar a .cart-badge,
 #mobile a .cart-badge {
   position: absolute;
@@ -658,6 +662,16 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: orangered;
   color: white;
   border: 2px solid orangered;
+}
+
+#products .pro .price-cart .cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  height: 36px;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 #products .pro .price-cart .cart:hover {
@@ -1197,10 +1211,6 @@ footer .cols .follow-left a {
     background: orangered;
     bottom: -7px;
     left: -10px;
-  }
-
-  #navbar .cart {
-    display: none;
   }
 
   #mobile {
