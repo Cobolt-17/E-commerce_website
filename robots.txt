@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cobolt-17.github.io/E-commerce_website/sitemap.xml

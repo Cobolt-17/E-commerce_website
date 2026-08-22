@@ -1,304 +1,352 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Ares Electronics Hub</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
-<link href="../css/main.css" rel="stylesheet"/>
-</head>
-<body>
-<section id="header">
-<a href="index.html">
-<img alt="Ares Electronics Hub Logo" class="logo" height="100px" src="../images/logo.png" width="100px"/>
-</a>
-<div class="header-center">
-<div class="search-wrap">
-<input aria-label="Search" id="siteSearch" placeholder="Search products or categories..." type="search"/>
-</div>
-<ul id="navbar">
-<li><a class="active" href="index.html">Home</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="categories.html">Categories</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li>
-<a href="cart.html"><i class="fa-solid fa-cart-shopping cart"></i></a>
-</li>
-<li class="nav-close">
-<a href="#"><i class="fa-solid fa-angle-up fa-rotate-90" id="close"></i></a>
-</li>
-</ul>
-</div>
-<div id="mobile">
-<a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-<i class="fa-solid fa-bars" id="bar"></i>
-</div>
-</section>
-<div class="search-results" id="searchResults"></div>
-<section id="hero">
-<h2>Welcome To</h2>
-<h1>Ares Electronics <span> Hub</span></h1>
-<p>
-        Your One-Stop Shop for Electronics Components,<br/>
-        IoT Modules, Robotics &amp; More.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shop electronics components, IoT modules, robotics parts, sensors, displays, and accessories at Ares Electronics Hub." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://cobolt-17.github.io/E-commerce_website/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ares Electronics Hub" />
+    <meta property="og:description" content="Electronics components, IoT modules, robotics parts, and accessories." />
+    <meta property="og:url" content="https://cobolt-17.github.io/E-commerce_website/" />
+    <title>Ares Electronics Hub | Electronics Components &amp; Robotics</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="index.html">
+        <img
+          src="../images/logo.png"
+          class="logo"
+          alt="Ares Electronics Hub Logo"
+          width="100px"
+          height="100px"
+        />
+      </a>
+      <div class="header-center">
+        <div class="search-wrap">
+          <input
+            id="siteSearch"
+            type="search"
+            placeholder="Search products or categories..."
+            aria-label="Search"
+          />
+        </div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping cart"></i
+            ></a>
+          </li>
+          <li class="nav-close">
+            <a href="#"
+              ><i id="close" class="fa-solid fa-angle-up fa-rotate-90"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+    <div id="searchResults" class="search-results"></div>
+    <section id="hero">
+      <h2>Welcome To</h2>
+      <h1>Ares Electronics <span> Hub</span></h1>
+      <p>
+        Your One-Stop Shop for Electronics Components,<br />
+        IoT Modules, Robotics & More.
       </p>
-<div class="hero-btn">
-<a class="shop-btn" href="products.html">Shop Now</a>
-<a class="categories-btn" href="categories.html">EXPLORE CATEGORIES</a>
-</div>
-</section>
-<section id="products">
-<div class="heading">
-<span class="line"></span>
-<span class="dot"></span>
-<h2>SHOP BY <span>CATEGORIES</span></h2>
-<span class="dot"></span>
-<span class="line"></span>
-</div>
-<div class="cat-container"><div class="pro">
-<img src="../images/categories/arduino-boards.png"/>
-<div class="des">
-<span>ARDUINO BOARDS</span>
-</div>
-</div><div class="pro">
-<img src="../images/categories/sensors.png"/>
-<div class="des">
-<span>SENSORS</span>
-</div>
-</div><div class="pro">
-<img src="../images/categories/motors.png"/>
-<div class="des">
-<span>MOTORS</span>
-</div>
-</div><div class="pro">
-<img src="../images/categories/displays.png"/>
-<div class="des">
-<span>DISPLAYS</span>
-</div>
-</div><div class="pro">
-<img src="../images/categories/gsm-modules.png"/>
-<div class="des">
-<span>GSM MODULES</span>
-</div>
-</div><div class="pro">
-<img src="../images/categories/wifi-modules.png"/>
-<div class="des">
-<span>WIFI MODULES</span>
-</div>
-</div><div class="pro">
-<img src="../images/categories/accessories.png"/>
-<div class="des">
-<span>ACCESSORIES</span>
-</div>
-</div></div>
-<div class="heading">
-<span class="line"></span>
-<span class="dot"></span>
-<h2>FEATURED <span>PRODUCTS</span></h2>
-<span class="dot"></span>
-<span class="line"></span>
-</div>
-<div class="pro-container">
-<div class="pro">
-<img src="../images/categories/arduino-boards.png"/>
-<div class="des">
-<span>Arduino Uno R3</span>
-<div class="star">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-</div>
-<div class="price-cart">
-<h4>₹499</h4>
-<button aria-label="Add to cart" class="cart add-to-cart" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-</div>
-</div>
-<div class="pro">
-<img src="../images/categories/wifi-modules.png"/>
-<div class="des">
-<span>ESP32 Dev Board</span>
-<div class="star">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-</div>
-<div class="price-cart">
-<h4>₹799</h4>
-<button aria-label="Add to cart" class="cart add-to-cart" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-</div>
-</div>
-<div class="pro">
-<img src="../images/products/Sensors/mq135-gas.png"/>
-<div class="des">
-<span>MQ135 Gas Sensor</span>
-<div class="star">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-</div>
-<div class="price-cart">
-<h4>₹149</h4>
-<button aria-label="Add to cart" class="cart add-to-cart" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-</div>
-</div>
-<div class="pro">
-<img src="../images/categories/sensors.png"/>
-<div class="des">
-<span>HC-SR04 Sensor</span>
-<div class="star">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-</div>
-<div class="price-cart">
-<h4>₹129</h4>
-<button aria-label="Add to cart" class="cart add-to-cart" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-</div>
-</div>
-<div class="pro">
-<img src="../images/categories/displays.png"/>
-<div class="des">
-<span>16x2 LCD Display</span>
-<div class="star">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-</div>
-<div class="price-cart">
-<h4>₹199</h4>
-<button aria-label="Add to cart" class="cart add-to-cart" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-</div>
-</div>
-<div class="pro">
-<img src="../images/products/Sensors/sg90-servo.png"/>
-<div class="des">
-<span>SG90 Servo Motor</span>
-<div class="star">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-</div>
-<div class="price-cart">
-<h4>₹249</h4>
-<button aria-label="Add to cart" class="cart add-to-cart" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-</div>
-</div>
-</div>
-</section>
-<section id="feature">
-<div class="f-content">
-<div class="f-box">
-<div class="f-icon"><i class="fa-solid fa-shield-halved"></i></div>
-<div class="f-text">
-<strong>Genuine Products</strong>
-<p>100% Original &amp;<br/>High Quality Components</p>
-</div>
-</div>
-<div class="f-box">
-<div class="f-icon"><i class="fa-solid fa-truck-fast"></i></div>
-<div class="f-text">
-<strong>Fast Delivery</strong>
-<p>Quick Shipping<br/>Across India</p>
-</div>
-</div>
-<div class="f-box">
-<div class="f-icon"><i class="fa-solid fa-tags"></i></div>
-<div class="f-text">
-<strong>Best Prices</strong>
-<p>Affordable Prices with<br/>Best Offers</p>
-</div>
-</div>
-<div class="f-box">
-<div class="f-icon"><i class="fa-solid fa-headset"></i></div>
-<div class="f-text">
-<strong>Support</strong>
-<p>24/7 Customer Support<br/>&amp; Assistance</p>
-</div>
-</div>
-</div>
-</section>
-<footer class="section">
-<div class="cols">
-<img alt="logo-header.png" class="logo-header" src="../images/logo-header.png"/>
-<p>Ares Electronics Hub is your one-stop</p>
-<p>destination for all electronics components</p>
-<p>modules, tools and robotics solutions.</p>
-</div>
-<div class="cols">
-<h4>QUICK LINKS</h4>
-<a href="index.html">Home</a>
-<a href="products.html">Products</a>
-<a href="categories.html">Categories</a>
-<a href="about.html">About Us</a>
-<a href="contact.html">Contact Us</a>
-</div>
-<div class="cols">
-<h4>CATEGORIES</h4>
-<a href="products.html">Arduino Boards</a>
-<a href="products.html">Sensors</a>
-<a href="products.html">Motors</a>
-<a href="products.html">Displays</a>
-<a href="products.html">GSM Modules</a>
-</div>
-<div class="cols">
-<h4 class="h4">-</h4>
-<a href="products.html">Wifi Modules</a>
-<a href="products.html">Robotics</a>
-<a href="products.html">Power Supplies</a>
-<a href="products.html">Accessories</a>
-<a href="products.html">All Products</a>
-</div>
-<div class="cols">
-<h4>CUSTOMER SERVICE</h4>
-<a href="#">Shipping Policy</a>
-<a href="#">Return Policy</a>
-<a href="#">Privacy Policy</a>
-<a href="#">Terms and Conditions</a>
-<a href="#">FAQ</a>
-</div>
-<div class="cols">
-<h4>FOLLOW US</h4>
-<div class="follow">
-<a href="#"><i class="fa-brands fa-facebook"></i></a>
-<a href="https://www.instagram.com/im_sharana?igsh=MWtkcGc2ODNxMmpiaA=="><i class="fa-brands fa-instagram"></i></a>
-<a href="https://www.linkedin.com/in/sharanabasava-i-javali-176102359?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android"><i class="fa-brands fa-linkedin"></i></a>
-<a href="#"><i class="fa-brands fa-pinterest"></i></a>
-<a href="#"><i class="fa-brands fa-twitter"></i></a>
-</div>
-<h4>PAYMENT METHODS</h4>
-<div class="payment">
-<a href="#"><i class="fa-brands fa-cc-visa"></i></a>
-<a href="#"><i class="fa-solid fa-credit-card"></i></a>
-<a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
-<a href="#"><i class="fa-brands fa-google-pay"></i></a>
-</div>
-</div>
-</footer>
-<footer class="copyright">
-<div>
-<p>© 2024 Ares Electronics Hub. All Rights Reserved.</p>
-</div>
-</footer>
-<script src="../js/script.js"></script>
-</body>
+      <div class="hero-btn">
+        <a href="products.html" class="shop-btn">Shop Now</a>
+        <a href="categories.html" class="categories-btn">EXPLORE CATEGORIES</a>
+      </div>
+    </section>
+    <section id="products">
+      <div class="heading">
+        <span class="line"></span>
+        <span class="dot"></span>
+        <h2>SHOP BY <span>CATEGORIES</span></h2>
+        <span class="dot"></span>
+        <span class="line"></span>
+      </div>
+      <div class="cat-container">
+        <div class="pro">
+          <img src="../images/categories/arduino-boards.png" alt="Arduino boards" />
+          <div class="des">
+            <span>ARDUINO BOARDS</span>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="../images/categories/sensors.png" alt="Electronic sensors" />
+          <div class="des">
+            <span>SENSORS</span>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="../images/categories/motors.png" alt="Motors" />
+          <div class="des">
+            <span>MOTORS</span>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="../images/categories/displays.png" alt="Electronic displays" />
+          <div class="des">
+            <span>DISPLAYS</span>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="../images/categories/gsm-modules.png" alt="GSM modules" />
+          <div class="des">
+            <span>GSM MODULES</span>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="../images/categories/wifi-modules.png" alt="Wi-Fi modules" />
+          <div class="des">
+            <span>WIFI MODULES</span>
+          </div>
+        </div>
+        <div class="pro">
+          <img src="../images/categories/accessories.png" alt="Electronics accessories" />
+          <div class="des">
+            <span>ACCESSORIES</span>
+          </div>
+        </div>
+      </div>
+      <div class="heading">
+        <span class="line"></span>
+        <span class="dot"></span>
+        <h2>FEATURED <span>PRODUCTS</span></h2>
+        <span class="dot"></span>
+        <span class="line"></span>
+      </div>
+      <div class="pro-container">
+        <div class="pro">
+            <img src="../images/categories/arduino-boards.png" alt="Arduino Uno R3" />
+            <div class="des">
+              <span>Arduino Uno R3</span>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="price-cart">
+              <h4>₹499</h4>
+              <button type="button" class="cart add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-shopping"></i
+              ></button>
+            </div>
+          </div>
+        <div class="pro">
+            <img src="../images/categories/wifi-modules.png" alt="ESP32 Dev Board" />
+            <div class="des">
+              <span>ESP32 Dev Board</span>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="price-cart">
+              <h4>₹799</h4>
+              <button type="button" class="cart add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-shopping"></i
+              ></button>
+            </div>
+          </div>
+        <div class="pro">
+            <img src="../images/products/Sensors/mq135-gas.png" alt="MQ135 Gas Sensor" />
+            <div class="des">
+              <span>MQ135 Gas Sensor</span>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="price-cart">
+              <h4>₹149</h4>
+              <button type="button" class="cart add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-shopping"></i
+              ></button>
+            </div>
+          </div>
+        <div class="pro">
+            <img src="../images/categories/sensors.png" alt="HC-SR04 Sensor" />
+            <div class="des">
+              <span>HC-SR04 Sensor</span>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="price-cart">
+              <h4>₹129</h4>
+              <button type="button" class="cart add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-shopping"></i
+              ></button>
+            </div>
+          </div>
+        <div class="pro">
+            <img src="../images/categories/displays.png" alt="16x2 LCD Display" />
+            <div class="des">
+              <span>16x2 LCD Display</span>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="price-cart">
+              <h4>₹199</h4>
+              <button type="button" class="cart add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-shopping"></i
+              ></button>
+            </div>
+          </div>
+        <div class="pro">
+            <img src="../images/products/Sensors/sg90-servo.png" alt="SG90 Servo Motor" />
+            <div class="des">
+              <span>SG90 Servo Motor</span>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <div class="price-cart">
+              <h4>₹249</h4>
+              <button type="button" class="cart add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-cart-shopping"></i
+              ></button>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section id="feature">
+      <div class="f-content">
+        <div class="f-box">
+          <div class="f-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="f-text">
+            <strong>Genuine Products</strong>
+            <p>100% Original &<br />High Quality Components</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <div class="f-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="f-text">
+            <strong>Fast Delivery</strong>
+            <p>Quick Shipping<br />Across India</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <div class="f-icon"><i class="fa-solid fa-tags"></i></div>
+          <div class="f-text">
+            <strong>Best Prices</strong>
+            <p>Affordable Prices with<br />Best Offers</p>
+          </div>
+        </div>
+        <div class="f-box">
+          <div class="f-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="f-text">
+            <strong>Support</strong>
+            <p>24/7 Customer Support<br />& Assistance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section">
+      <div class="cols">
+        <img
+          class="logo-header"
+          src="../images/logo-header.png"
+          alt="logo-header.png"
+        />
+        <p>Ares Electronics Hub is your one-stop</p>
+        <p>destination for all electronics components</p>
+        <p>modules, tools and robotics solutions.</p>
+      </div>
+      <div class="cols">
+        <h4>QUICK LINKS</h4>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="cols">
+        <h4>CATEGORIES</h4>
+        <a href="products.html">Arduino Boards</a>
+        <a href="products.html">Sensors</a>
+        <a href="products.html">Motors</a>
+        <a href="products.html">Displays</a>
+        <a href="products.html">GSM Modules</a>
+      </div>
+      <div class="cols">
+        <h4 class="h4">-</h4>
+        <a href="products.html">Wifi Modules</a>
+        <a href="products.html">Robotics</a>
+        <a href="products.html">Power Supplies</a>
+        <a href="products.html">Accessories</a>
+        <a href="products.html">All Products</a>
+      </div>
+      <div class="cols">
+        <h4>CUSTOMER SERVICE</h4>
+        <a href="#">Shipping Policy</a>
+        <a href="#">Return Policy</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="cols">
+        <h4>FOLLOW US</h4>
+        <div class="follow">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a
+            href="https://www.instagram.com/im_sharana?igsh=MWtkcGc2ODNxMmpiaA=="
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/sharanabasava-i-javali-176102359?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <h4>PAYMENT METHODS</h4>
+        <div class="payment">
+          <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+          <a href="#"><i class="fa-solid fa-credit-card"></i></a>
+          <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+          <a href="#"><i class="fa-brands fa-google-pay"></i></a>
+        </div>
+      </div>
+    </footer>
+    <footer class="copyright">
+      <div>
+        <p>© 2024 Ares Electronics Hub. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
 </html>

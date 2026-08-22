@@ -1,0 +1,14 @@
+# Local development
+.env
+.env.*
+!.env.example
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Build and test output
+coverage/
+dist/
+build/
